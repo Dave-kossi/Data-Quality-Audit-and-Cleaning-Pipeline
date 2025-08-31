@@ -30,5 +30,5 @@ This allows users to **compare the dataset quality before and after cleaning** a
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/Dave-kossi/Data-Quality-Audit-and-Cleaning-Pipeline.git
+cd Data-Quality-Audit-and-Cleaning-Pipeline
