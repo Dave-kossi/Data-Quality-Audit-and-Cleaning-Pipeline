@@ -29,7 +29,7 @@ This allows users to **compare dataset quality before and after cleaning** and o
 The pipeline was tested on the **Online Retail dataset**.  
 
 ### 🔍 Before Cleaning  
-[👉 View Before Cleaning Report (HTML)]()  
+[👉 View Before Cleaning Report (HTML)](version_2_apres.html)  
 
 ### ✅ After Cleaning  
 [👉 View After Cleaning Report (HTML)](reports/online_retail_after.html)  
