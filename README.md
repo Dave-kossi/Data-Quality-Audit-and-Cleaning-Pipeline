@@ -29,7 +29,7 @@ With this pipeline, users can **compare dataset quality before and after cleanin
 The pipeline was tested on the **Online Retail dataset**.  
 
 ### 🔍 Audit Before Cleaning  
-[👉 View Report (HTML)](reports/version_2_avant.html)  
+[👉 View Report (HTML)](version_2_avant.html)  
 
 Key observations before cleaning:
 - Presence of **missing values** in several columns (e.g. `CustomerID`)  
@@ -38,7 +38,7 @@ Key observations before cleaning:
 - **Inconsistent column naming conventions**  
 
 ### ✅ Audit After Cleaning  
-[👉 View Report (HTML)](reports/version_2_apres.html)  
+[👉 View Report (HTML)](version_2_apres.html)  
 
 Key improvements after cleaning:
 - **Duplicates removed** → thousands of redundant rows dropped  
