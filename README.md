@@ -1,15 +1,13 @@
-# Data-Quality-Audit-and-Cleaning-Pipeline
-A Python pipeline for auditing and cleaning datasets. It generates before/after profiling reports, removes duplicates, handles missing values, standardizes column names and data types, and exports a cleaned dataset.
 # 🧹 Data Quality Audit and Cleaning Pipeline
 
 ## 📌 Overview
 This project implements a **Data Quality Audit and Cleaning Pipeline** designed to help data analysts, data scientists, and engineers quickly **assess and improve the quality of their datasets**.  
 
 It performs two main tasks:
-1. **Audit (Profiling)** – Generates a detailed HTML report *before and after cleaning* using [ydata-profiling](https://github.com/ydataai/ydata-profiling).
-2. **Cleaning** – Automatically removes duplicates, fixes column names, handles missing values, and standardizes data types.
+1. **Audit (Profiling)** – Generates a detailed HTML report *before and after cleaning* using [ydata-profiling](https://github.com/ydataai/ydata-profiling).  
+2. **Cleaning** – Automatically removes duplicates, fixes column names, handles missing values, and standardizes data types.  
 
-This allows users to **compare the dataset quality before and after cleaning** and obtain both a cleaned dataset and two audit reports.
+This allows users to **compare dataset quality before and after cleaning** and obtain both a cleaned dataset and two audit reports.  
 
 ---
 
@@ -23,6 +21,24 @@ This allows users to **compare the dataset quality before and after cleaning** a
   - Handle missing values (median for numeric, `"unknown"` for text)  
 - 💾 **Save cleaned dataset** in the same format as input  
 - 🌐 **Automatic browser opening** for reports  
+
+---
+
+## 📊 Example Audit Reports  
+
+The pipeline was tested on the **Online Retail dataset**.  
+
+### 🔍 Before Cleaning  
+[👉 View Before Cleaning Report (HTML)]()  
+
+### ✅ After Cleaning  
+[👉 View After Cleaning Report (HTML)](reports/online_retail_after.html)  
+
+### ✨ Key Improvements (Online Retail dataset)  
+- **5,678 duplicates** removed  
+- **3 columns** with missing values imputed  
+- Column names normalized (e.g., `CustomerID` → `customer_id`)  
+- Data types corrected (e.g., `InvoiceDate` converted to datetime)  
 
 ---
 
