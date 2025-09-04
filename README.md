@@ -40,11 +40,4 @@ The pipeline was tested on the **Online Retail dataset**.
 - Column names normalized (e.g., `CustomerID` → `customer_id`)  
 - Data types corrected (e.g., `InvoiceDate` converted to datetime)  
 
----
 
-## 🚀 Installation
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/Dave-kossi/Data-Quality-Audit-and-Cleaning-Pipeline.git
-cd Data-Quality-Audit-and-Cleaning-Pipeline
