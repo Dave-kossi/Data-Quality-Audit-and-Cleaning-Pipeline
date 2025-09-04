@@ -29,10 +29,10 @@ This allows users to **compare dataset quality before and after cleaning** and o
 The pipeline was tested on the **Online Retail dataset**.  
 
 ### 🔍 Before Cleaning  
-[👉 View Before Cleaning Report (HTML)](version_2_apres.html)  
+[👉 View Before Cleaning Report (HTML)](version_2_avant.html)  
 
 ### ✅ After Cleaning  
-[👉 View After Cleaning Report (HTML)](reports/online_retail_after.html)  
+[👉 View After Cleaning Report (HTML)](version_2_apres.html)  
 
 ### ✨ Key Improvements (Online Retail dataset)  
 - **5,678 duplicates** removed  
