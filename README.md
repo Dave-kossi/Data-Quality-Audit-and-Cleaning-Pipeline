@@ -7,7 +7,7 @@ It performs two main tasks:
 1. **Audit (Profiling)** – Generates a detailed HTML report *before and after cleaning* using [ydata-profiling](https://github.com/ydataai/ydata-profiling).  
 2. **Cleaning** – Automatically removes duplicates, fixes column names, handles missing values, and standardizes data types.  
 
-This allows users to **compare dataset quality before and after cleaning** and obtain both a cleaned dataset and two audit reports.  
+With this pipeline, users can **compare dataset quality before and after cleaning** and obtain both a cleaned dataset and two audit reports.  
 
 ---
 
@@ -24,20 +24,31 @@ This allows users to **compare dataset quality before and after cleaning** and o
 
 ---
 
-## 📊 Example Audit Reports  
+## 📊 Example on the *Online Retail* Dataset  
 
 The pipeline was tested on the **Online Retail dataset**.  
 
-### 🔍 Before Cleaning  
-[👉 View Before Cleaning Report (HTML)](version_2_avant.html)  
+### 🔍 Audit Before Cleaning  
+[👉 View Report (HTML)](reports/version_2_avant.html)  
 
-### ✅ After Cleaning  
-[👉 View After Cleaning Report (HTML)](version_2_apres.html)  
+Key observations before cleaning:
+- Presence of **missing values** in several columns (e.g. `CustomerID`)  
+- Multiple **duplicated rows** in the dataset  
+- **Mixed or incorrect data types** (dates stored as strings, numeric columns with text noise)  
+- **Inconsistent column naming conventions**  
 
-### ✨ Key Improvements (Online Retail dataset)  
-- **5,678 duplicates** removed  
-- **3 columns** with missing values imputed  
-- Column names normalized (e.g., `CustomerID` → `customer_id`)  
-- Data types corrected (e.g., `InvoiceDate` converted to datetime)  
+### ✅ Audit After Cleaning  
+[👉 View Report (HTML)](reports/version_2_apres.html)  
 
+Key improvements after cleaning:
+- **Duplicates removed** → thousands of redundant rows dropped  
+- **Missing values handled** → imputation strategies applied  
+- **Column names normalized** → unified snake_case format  
+- **Data types corrected** → e.g. `InvoiceDate` converted to datetime  
+
+### ✨ Summary of Improvements
+- Dataset size reduced with duplicates removed  
+- Column naming consistency improved → easier for analysis and modeling  
+- Missing values systematically treated  
+- Profiling alerts significantly reduced, leading to **higher data quality**  
 
